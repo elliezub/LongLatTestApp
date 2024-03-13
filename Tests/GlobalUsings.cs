@@ -1,0 +1,9 @@
+global using LongLatTestApp;
+global using Xunit;
+global using Moq;
+global using GoogleMaps.LocationServices;
+global using System.Net;
+global using System.Net.Http;
+global using System.Text.Json;
+global using System.Threading.Tasks;
+global using Moq.Protected;
