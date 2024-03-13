@@ -32,7 +32,7 @@ namespace LongLatTestApp
             var longVersion = new LongVersion(httpClient, apiKey);
 
             var address = "1600 Amphitheatre Parkway, Mountain View, CA";
-            // Correctly await the asynchronous operation
+            
             var geolocationResult = await longVersion.GetGeolocationAsync(address);
             Console.WriteLine(geolocationResult);
         }
