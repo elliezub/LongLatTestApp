@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongLatTestApp", "LongLatTestApp.csproj", "{EF190621-9A2B-4A6C-A8F4-7EC1001EAD1C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongLatTestApp", "LongLatFolder/LongLatTestApp.csproj", "{EF190621-9A2B-4A6C-A8F4-7EC1001EAD1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
