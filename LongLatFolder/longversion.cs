@@ -18,11 +18,11 @@ namespace LongLatTestApp
 
         public async Task<string> GetGeolocationAsync(string address)
         {
-            var requestUri = $"https://maps.googleapis.com/maps/api/geocode/json?address={Uri.EscapeDataString(address)}&key={_apiKey}";
+            var relativeUri = $"maps/api/geocode/json?address={Uri.EscapeDataString(address)}&key={_apiKey}";
 
             try
             {
-                var response = await _httpClient.GetAsync(requestUri);
+                var response = await _httpClient.GetAsync(relativeUri);
                 response.EnsureSuccessStatusCode();
                 var root = await response.Content.ReadFromJsonAsync<JsonElement>();
 

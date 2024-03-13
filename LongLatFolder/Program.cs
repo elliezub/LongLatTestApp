@@ -28,7 +28,11 @@ namespace LongLatTestApp
             Console.WriteLine(result);
 
             //long version stuff
-            var httpClient = new HttpClient();
+            var httpClient = new HttpClient
+            {
+                BaseAddress = new Uri("https://maps.googleapis.com/")
+            };
+            
             var longVersion = new LongVersion(httpClient, apiKey);
 
             var address = "1600 Amphitheatre Parkway, Mountain View, CA";
